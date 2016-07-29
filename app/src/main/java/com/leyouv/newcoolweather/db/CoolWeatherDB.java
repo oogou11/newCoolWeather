@@ -1,23 +1,20 @@
-package db;
+package com.leyouv.newcoolweather.db;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.Adapter;
+
+import com.leyouv.newcoolweather.model.City;
+import com.leyouv.newcoolweather.model.County;
+import com.leyouv.newcoolweather.model.Province;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import model.City;
-import model.County;
-import model.Province;
 
 /**
  * Created by zhangxt on 2016/7/29.
  */
 public class CoolWeatherDB {
-
     /*数据库名称*/
     public static final String DB_NAME = "cool_weather";
 
@@ -103,9 +100,9 @@ public class CoolWeatherDB {
     public  void saveCounty(County county){
         if(county!=null){
             db.execSQL("insert into County(count_name,county_code,city_id" +
-                    "values(?,?,?)",
-                     new String[]{county.getCountyName(),county.getCountyCode(),
-                             Integer.toString(county.getCityId())} );
+                            "values(?,?,?)",
+                    new String[]{county.getCountyName(),county.getCountyCode(),
+                            Integer.toString(county.getCityId())} );
         }
     }
 

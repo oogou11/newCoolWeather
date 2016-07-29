@@ -1,9 +1,8 @@
-package db;
+package com.leyouv.newcoolweather.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.ParcelUuid;
 
 /**
  * Created by zhangxt on 2016/7/29.

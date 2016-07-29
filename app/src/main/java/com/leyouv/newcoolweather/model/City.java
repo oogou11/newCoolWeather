@@ -1,4 +1,4 @@
-package model;
+package com.leyouv.newcoolweather.model;
 
 /**
  * Created by zhangxt on 2016/7/29.
